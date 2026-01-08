@@ -29,15 +29,15 @@ filtrar_mayores([H|T], N, Res) :-
 
 
 %progenitor
-progenitor(ivan,made).
-progenitor(ivan,jorge).
-progenitor(ana,made).
-progenitor(ana,jorge).
+progenitor(Alex,Gabriela).
+progenitor(Alex,Fernando).
+progenitor(Lucia,Gabriela).
+progenitor(Lucia,Fernando).
 
-hombre(ivan).
-hombre(jorge).
-mujer(ana).
-mujer(made).
+hombre(Alex).
+hombre(Fernando).
+mujer(Lucia).
+mujer(Gabriela).
 
 es_hermano(X, Y):-
     progenitor(P , X),
@@ -45,5 +45,6 @@ es_hermano(X, Y):-
         X \== Y,
         hombre(X).
  
+
 
 
